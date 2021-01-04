@@ -1,0 +1,140 @@
+
+
+*
+	// outline 1px solid blue
+
+
+
+html
+	font 16px/1.5 'Lato', sans-serif
+	height 100%
+
+
+body
+	height 100%
+	background-color #f3f3f3
+	color black
+	cursor default
+	position relative
+	min-width 300px
+
+
+a
+	text-decoration none
+	color inherit
+
+
+h1, h2, h3, h4, h5, h6, p, ul, li
+	margin 0
+	padding 0
+	font-family inherit
+
+
+
+h1, h2
+	font-family 'Cabin', sans-serif
+	font-weight normal
+
+h1
+	font-size 3.75em
+	line-height 1em
+
+h2
+	font-size 3em
+
+
+.btn
+	background none
+	border 1px solid transparent
+	outline none
+	text-decoration none
+	color inherit
+	padding 14px 20px
+	display inline-block
+	font-weight bold
+	border-radius 4px
+	text-transform uppercase
+	transit background-color, color, border-color
+
+	&.color
+		background-color main-color
+		border-color main-color
+
+		&:hover
+			background-color darken(main-color, 10%)
+
+	&.color-2
+		background-color transparent
+		border-color #333
+
+		&:hover
+			background-color #333
+			color #ddd
+
+	&.color-3
+		background-color transparent
+		border-color #fff
+		border-width 2px
+
+		&:hover
+			background-color #333
+
+	&.color-4
+		background-color transparent
+		border-color #fff
+
+		&:hover
+			background-color #fff
+			color main-color
+
+
+.box
+	padding-top 120px
+	padding-bottom 120px
+
+	.box-title
+		margin-bottom 50px
+		text-align center
+
+
+.overlay
+	z-index 1
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+	background-color rgba(0, 0, 0, .6)
+
+
+.button-block
+	padding-top 50px
+
+
+.progress
+	height 16px
+	width 100%
+	background-color #f2f2f2
+
+	&_inner
+		background-color main-color
+		position relative
+		height 100%
+		width 0
+		transit width
+
+		&:after
+			content attr(data-num) '%'
+			display block
+			position absolute
+			right -19px
+			top -33px
+			border-radius 5px
+			background-color #202020
+			color #fff
+			padding 4px 7px
+			font-size 12px
+			font-weight bold
+
+
+

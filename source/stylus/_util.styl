@@ -1,0 +1,81 @@
+
+main-color = #36c36e
+transition-prop = '.2s ease-in-out'
+
+
+
+transit(props...)
+	str = ''
+
+	for prop in props
+		if prop == props[len(props)-1]
+			str += prop + ' ' + transition-prop + ' '
+		else
+			str += prop + ' ' + transition-prop + ', '
+
+	transition unquote(str)
+
+
+.clearfix
+
+	&:after
+		content ""
+		display table
+		height 0
+		width 0
+		clear both
+		visibility hidden
+
+
+img
+	vertical-align top
+
+
+.toggle
+	color = #fff
+	thickness = 3px
+
+	background-color transparent
+	border none
+	outline none
+
+	display block
+	width 40px
+	height 30px
+	margin 0
+
+	span
+		position relative
+		display block
+
+		&:after,
+		&:before
+			content ""
+			position absolute
+			left 0
+			top -9px
+
+		&:after
+			top 9px
+
+	span, span:after, span:before
+		width 100%
+		height thickness
+		background-color color
+		transition all 0.3s
+		backface-visibility hidden
+		border-radius 2px
+
+	/* on activation */
+	&.on span
+		background-color transparent
+
+	&.on span:before
+		transform rotate(45deg) translate(5px, 5px)
+
+	&.on span:after
+		transform rotate(-45deg) translate(7px, -8px)
+
+
+
+

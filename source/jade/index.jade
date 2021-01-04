@@ -1,0 +1,270 @@
+
+extends ./_layout
+
+
+
+block content
+
+	header.header
+
+		.row
+			.col.xs-12.sm-4.logo
+				a(href="#")
+					img(src="img/logo.png", alt="")
+
+				button.toggle
+					span
+
+			nav.col.xs-12.sm-8.nav
+				a(href="#", class="active") Home
+				a(href="#") About
+				a(href="#") Blog
+				a(href="#") Portfolio
+				a(href="#") Contact
+
+
+	section.banner
+		.overlay
+
+		.row
+			.col.xs-12.md-7.content
+				h1 We’re here to create your online presense and style
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse mattis orci dapibus risus dignissim, viverra  pellentesque arcu ullamcorper. Mauris a tincidunt lectus. Proin nec venenatis quam.
+
+				.button-block
+					a(href="#", class="btn color") Start today with us
+
+
+	section.features.box
+		.box-title
+			h2 Features you'll love
+
+		.row.box-content
+
+			.col.xs-12.sm-6.md-4.item.touch
+				.inner
+					h3 Personal touch
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+
+			.col.xs-12.sm-6.md-4.item.solution
+				.inner
+					h3 Unique solutions
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+
+			.col.xs-12.sm-6.md-4.item.promotion
+				.inner
+					h3 Help in promotion
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+
+
+	section.story.box
+		.overlay
+
+		.row
+			.col.xs-12.md-6.md-offset-6
+
+				h2 Our Short Story
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+
+				.button-block
+					a(href="#", class="btn color-2") More about our team
+
+
+	section.clients.box
+		.box-title
+			h2 Our Clients Says
+
+		.row.box-content
+
+			.col.xs-12.md-6.item
+
+				.review
+					.review_content
+						p Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+
+					.review_author
+
+						.text
+							h4 Joe Doe
+							p Creative Deirector at Gmoogle.com
+
+						.image
+							a(href="#")
+								img(src="img/reviews/pic-01.jpg", alt="")
+
+				.review
+					.review_content
+						p Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+
+					.review_author
+
+						.text
+							h4 Joe Doe
+							p Creative Deirector at Gmoogle.com
+
+						.image
+							a(href="#")
+								img(src="img/reviews/pic-02.jpg", alt="")
+
+
+			.col.xs-12.md-6.item
+
+				.review
+					.review_content
+						p Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+
+					.review_author
+
+						.text
+							h4 Joe Doe
+							p Creative Deirector at Gmoogle.com
+
+						.image
+							a(href="#")
+								img(src="img/reviews/pic-03.jpg", alt="")
+
+				.review
+					.review_content
+						p Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+
+					.review_author
+
+						.text
+							h4 Joe Doe
+							p Creative Deirector at Gmoogle.com
+
+						.image
+							a(href="#")
+								img(src="img/reviews/pic-04.jpg", alt="")
+
+
+	section.expierence.box
+		.overlay
+
+		.row
+			.col.xs-12.col-mb.md-6.desc
+
+				h2 Our Experience
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+
+				.button-block
+					a(href="#", class="btn color-3") More about our team
+
+			.col.xs-12.col-mb.md-6.skills
+
+				h2 Skills
+
+				.skill
+					span.label C++ Development
+					.progress
+						.progress_inner(style={ width: '95%' }, data-num="95")
+
+				.skill
+					span.label .Net
+					.progress
+						.progress_inner(style={ width: '75%' }, data-num="75")
+
+				.skill
+					span.label HTML5
+					.progress
+						.progress_inner(style={ width: '80%' }, data-num="80")
+
+				.skill
+					span.label jQuery
+					.progress
+						.progress_inner(style={ width: '55%' }, data-num="55")
+
+				.skill
+					span.label Angular
+					.progress
+						.progress_inner(style={ width: '85%' }, data-num="85")
+
+
+	section.blog.box
+		.box-title
+			h2 From the Blog
+
+		.row.box-content
+
+			.col.xs-12.sm-6.md-4.item
+
+				a(href="#", class="picture")
+					img(src="img/blog/pic-01.jpg", alt="")
+
+				.desc
+					h3 Cache Invalidation Strategies With Varnish Cache
+					.info
+						span.date March 4, 2014
+						span.comment 2 Comments
+					p Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value
+
+
+			.col.xs-12.sm-6.md-4.item
+
+				a(href="#", class="picture")
+					img(src="img/blog/pic-02.jpg", alt="")
+
+				.desc
+					h3 Cache Invalidation Strategies With Varnish Cache
+					.info
+						span.date March 4, 2014
+						span.comment 2 Comments
+					p Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value
+
+
+			.col.xs-12.sm-6.md-4.item
+
+				a(href="#", class="picture")
+					img(src="img/blog/pic-03.jpg", alt="")
+
+				.desc
+					h3 Cache Invalidation Strategies With Varnish Cache
+					.info
+						span.date March 4, 2014
+						span.comment 2 Comments
+					p Shortly thereafter, I was working with RetailMeNot, tasked with designing its iOS and Android app tutorial. The product team wanted to make sure hat users were clear about the value
+
+
+	section.ready
+		.row
+
+			.col.xs-12.sm-7.text
+				h3 Are you ready to go?
+				p Here the call to action area. Lorem ipsum dolor sit amet and click to the button
+
+			.col.xs-12.sm-5.button
+				a(href="", class="btn color-4") Start your project
+
+
+	footer.footer
+		.row
+
+			.col.xs-12.xs-mb.sm-6.sm-mb.md-3.item.logo-wrap
+				a(href="#", class="logo")
+					img(src="img/logo.png", alt="")
+
+			.col.xs-12.xs-mb.sm-6.sm-mb.md-3.item
+				h3 New York
+				p Address goes here in a one or two lines, maybe lorem ipsum
+
+				p.addr +44 800 800 90
+				p.addr info@domen.com
+
+			.col.xs-12.xs-mb.sm-6.sm-mb.md-3.item
+				h3 London
+				p Address goes here in a one or two lines, maybe lorem ipsum
+
+				p.addr +44 800 800 90
+				p.addr info@domen.com
+
+			.col.xs-12.xs-mb.sm-6.sm-mb.md-3.item
+				h3 Mandid
+				p Address goes here in a one or two lines, maybe lorem ipsum
+
+				p.addr +44 800 800 90
+				p.addr info@domen.com
+
+
+
